@@ -1,0 +1,502 @@
+▶INFO  2019-08-06 17:16:54,504 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 45932 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 17:16:54,509 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 17:16:54,663 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 17:16:54,666 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 17:16:56,619 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 17:16:56,687 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 17:16:56,688 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 17:16:56,929 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 17:16:56,930 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 2258 ms
+▶INFO  2019-08-06 17:16:58,548 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e3ef326, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b0cee0e, org.springframework.security.web.header.HeaderWriterFilter@41504c63, org.springframework.security.web.authentication.logout.LogoutFilter@5d3ca566, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3173d94d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e0f04d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10740861, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b279d27, org.springframework.security.web.session.SessionManagementFilter@1179cc5c, org.springframework.security.web.access.ExceptionTranslationFilter@3303aee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41ba3777]
+▶INFO  2019-08-06 17:16:58,686 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b535a97, org.springframework.security.web.context.SecurityContextPersistenceFilter@59e6cb08, org.springframework.security.web.header.HeaderWriterFilter@454b2714, org.springframework.web.filter.CorsFilter@10deec90, org.springframework.security.web.authentication.logout.LogoutFilter@44f42ce7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b7f6f05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@679094f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@725a378e, org.springframework.security.web.session.SessionManagementFilter@5f9f9b0f, org.springframework.security.web.access.ExceptionTranslationFilter@535e2cb5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a3982f9]
+▶INFO  2019-08-06 17:16:58,872 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 17:16:59,116 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 17:16:59,268 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 17:16:59,276 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 5.43 seconds (JVM running for 7.552)
+▶INFO  2019-08-06 17:18:26,467 [http-nio-4001-exec-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+▶INFO  2019-08-06 17:18:26,468 [http-nio-4001-exec-1] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:524]: Initializing Servlet 'dispatcherServlet'
+▶INFO  2019-08-06 17:18:26,475 [http-nio-4001-exec-1] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:546]: Completed initialization in 7 ms
+▶INFO  2019-08-06 17:27:21,397 [http-nio-4001-exec-7] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 17:27:21,418 [http-nio-4001-exec-7] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶WARN  2019-08-06 17:27:30,965 [http-nio-4001-exec-8] --- org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver[logException:198]: Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'token' is not present]
+▶INFO  2019-08-06 17:27:49,370 [http-nio-4001-exec-1] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 17:27:49,372 [http-nio-4001-exec-1] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 17:27:57,482 [http-nio-4001-exec-3] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 17:27:57,485 [http-nio-4001-exec-3] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 17:28:41,066 [http-nio-4001-exec-9] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 17:28:41,070 [http-nio-4001-exec-9] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 17:41:11,952 [Thread-8] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[shutdown:208]: Shutting down ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 17:41:13,491 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 45932 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 17:41:13,492 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 17:41:14,624 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 17:41:14,629 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 17:41:14,630 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 17:41:14,677 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 17:41:14,678 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 1183 ms
+▶WARN  2019-08-06 17:41:15,028 [restartedMain] --- org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[refresh:557]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+▶INFO  2019-08-06 17:41:15,029 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Stopping service [Tomcat]
+▶INFO  2019-08-06 17:41:15,041 [restartedMain] --- org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[logMessage:135]: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+▶ERROR 2019-08-06 17:41:15,063 [restartedMain] --- org.springframework.boot.SpringApplication[reportFailure:821]: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.yjlee.oauth2.MainApplication.main(MainApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/yjlee/oauth2/config/AuthorizationServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	log cannot be resolved
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$4e3eb902.tokenStore(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.configure(AuthorizationServiceConfig.java:55)
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:79)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	log cannot be resolved
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 44 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	log cannot be resolved
+
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.accessTokenConverter(AuthorizationServiceConfig.java:47)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.tokenStore(AuthorizationServiceConfig.java:38)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$4e3eb902.CGLIB$tokenStore$3(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$4e3eb902$$FastClassBySpringCGLIB$$2eb0cbbe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$4e3eb902.tokenStore(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 45 common frames omitted
+▶INFO  2019-08-06 17:42:24,148 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 17348 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 17:42:24,160 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 17:42:24,374 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 17:42:24,375 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 17:42:27,907 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 17:42:27,971 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 17:42:27,973 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 17:42:28,242 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 17:42:28,243 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 3867 ms
+▶INFO  2019-08-06 17:42:29,112 [restartedMain] --- com.yjlee.oauth2.config.AuthorizationServiceConfig[accessTokenConverter:53]: Set JWT signing key to: {alg=HMACSHA256, value=yjlee_public}
+▶INFO  2019-08-06 17:42:29,119 [restartedMain] --- com.yjlee.oauth2.config.AuthorizationServiceConfig[accessTokenConverter:53]: Set JWT signing key to: {alg=HMACSHA256, value=yjlee_public}
+▶INFO  2019-08-06 17:42:31,090 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@664d620d, org.springframework.security.web.context.SecurityContextPersistenceFilter@16bd6be8, org.springframework.security.web.header.HeaderWriterFilter@530ee5b8, org.springframework.security.web.authentication.logout.LogoutFilter@b704418, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@248be9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@252b12a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26748a98, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c3c9a0, org.springframework.security.web.session.SessionManagementFilter@4e7ae95, org.springframework.security.web.access.ExceptionTranslationFilter@18b69492, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21812c75]
+▶INFO  2019-08-06 17:42:31,383 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1454768d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d678115, org.springframework.security.web.header.HeaderWriterFilter@24fc20db, org.springframework.web.filter.CorsFilter@644e8a1a, org.springframework.security.web.authentication.logout.LogoutFilter@1622863e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@565da449, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1362bca1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e80773, org.springframework.security.web.session.SessionManagementFilter@69ad8d0e, org.springframework.security.web.access.ExceptionTranslationFilter@7c8ef7ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3208e043]
+▶INFO  2019-08-06 17:42:31,796 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 17:42:32,154 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 17:42:32,352 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 17:42:32,362 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 9.584 seconds (JVM running for 12.976)
+▶INFO  2019-08-06 17:44:48,473 [http-nio-4001-exec-2] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+▶INFO  2019-08-06 17:44:48,474 [http-nio-4001-exec-2] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:524]: Initializing Servlet 'dispatcherServlet'
+▶INFO  2019-08-06 17:44:48,492 [http-nio-4001-exec-2] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:546]: Completed initialization in 18 ms
+▶INFO  2019-08-06 17:46:44,113 [http-nio-4001-exec-5] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 17:46:44,137 [http-nio-4001-exec-5] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 17:48:13,894 [http-nio-4001-exec-6] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 17:48:13,901 [http-nio-4001-exec-6] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 17:56:00,967 [Thread-8] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[shutdown:208]: Shutting down ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 17:56:20,387 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 39180 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 17:56:20,396 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 17:56:20,608 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 17:56:20,609 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 17:56:23,827 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 17:56:23,883 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 17:56:23,886 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 17:56:24,169 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 17:56:24,170 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 3560 ms
+▶WARN  2019-08-06 17:56:24,916 [restartedMain] --- org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[refresh:557]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+▶INFO  2019-08-06 17:56:24,921 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Stopping service [Tomcat]
+▶INFO  2019-08-06 17:56:24,963 [restartedMain] --- org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[logMessage:135]: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+▶ERROR 2019-08-06 17:56:24,994 [restartedMain] --- org.springframework.boot.SpringApplication[reportFailure:821]: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.yjlee.oauth2.MainApplication.main(MainApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/yjlee/oauth2/config/AuthorizationServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.security.jwt.codec.InvalidBase64CharacterException: Bad Base64 input character decimal 95 in array position 5
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$6d009d88.tokenStore(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.configure(AuthorizationServiceConfig.java:59)
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:79)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.security.jwt.codec.InvalidBase64CharacterException: Bad Base64 input character decimal 95 in array position 5
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 44 common frames omitted
+Caused by: org.springframework.security.jwt.codec.InvalidBase64CharacterException: Bad Base64 input character decimal 95 in array position 5
+	at org.springframework.security.jwt.codec.Base64Codec.decode(Base64Codec.java:621)
+	at org.springframework.security.jwt.codec.Base64Codec.decode(Base64Codec.java:242)
+	at org.springframework.security.jwt.codec.Codecs.b64Decode(Codecs.java:36)
+	at org.springframework.security.jwt.crypto.sign.RsaKeyHelper.parseSSHPublicKey(RsaKeyHelper.java:120)
+	at org.springframework.security.jwt.crypto.sign.RsaKeyHelper.parsePublicKey(RsaKeyHelper.java:106)
+	at org.springframework.security.jwt.crypto.sign.RsaVerifier.<init>(RsaVerifier.java:45)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.accessTokenConverter(AuthorizationServiceConfig.java:50)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.tokenStore(AuthorizationServiceConfig.java:43)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$6d009d88.CGLIB$tokenStore$3(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$6d009d88$$FastClassBySpringCGLIB$$c17181db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$6d009d88.tokenStore(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 45 common frames omitted
+▶INFO  2019-08-06 17:57:02,832 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 41720 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 17:57:02,846 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 17:57:03,004 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 17:57:03,005 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 17:57:06,662 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 17:57:06,712 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 17:57:06,714 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 17:57:06,974 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 17:57:06,975 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 3969 ms
+▶WARN  2019-08-06 17:57:07,679 [restartedMain] --- org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[refresh:557]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+▶INFO  2019-08-06 17:57:07,694 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Stopping service [Tomcat]
+▶INFO  2019-08-06 17:57:07,734 [restartedMain] --- org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[logMessage:135]: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+▶ERROR 2019-08-06 17:57:07,760 [restartedMain] --- org.springframework.boot.SpringApplication[reportFailure:821]: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.yjlee.oauth2.MainApplication.main(MainApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/yjlee/oauth2/config/AuthorizationServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.security.jwt.codec.InvalidBase64CharacterException: Bad Base64 input character decimal 95 in array position 5
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$2c5794bb.tokenStore(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.configure(AuthorizationServiceConfig.java:59)
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:79)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.security.jwt.codec.InvalidBase64CharacterException: Bad Base64 input character decimal 95 in array position 5
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 44 common frames omitted
+Caused by: org.springframework.security.jwt.codec.InvalidBase64CharacterException: Bad Base64 input character decimal 95 in array position 5
+	at org.springframework.security.jwt.codec.Base64Codec.decode(Base64Codec.java:621)
+	at org.springframework.security.jwt.codec.Base64Codec.decode(Base64Codec.java:242)
+	at org.springframework.security.jwt.codec.Codecs.b64Decode(Codecs.java:36)
+	at org.springframework.security.jwt.crypto.sign.RsaKeyHelper.parseSSHPublicKey(RsaKeyHelper.java:120)
+	at org.springframework.security.jwt.crypto.sign.RsaKeyHelper.parsePublicKey(RsaKeyHelper.java:106)
+	at org.springframework.security.jwt.crypto.sign.RsaVerifier.<init>(RsaVerifier.java:45)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.accessTokenConverter(AuthorizationServiceConfig.java:50)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.tokenStore(AuthorizationServiceConfig.java:43)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$2c5794bb.CGLIB$tokenStore$3(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$2c5794bb$$FastClassBySpringCGLIB$$f5f0c3d0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$2c5794bb.tokenStore(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 45 common frames omitted
+▶INFO  2019-08-06 17:58:17,374 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 34176 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 17:58:17,383 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 17:58:17,580 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 17:58:17,583 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 17:58:20,215 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 17:58:20,319 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 17:58:20,320 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 17:58:20,690 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 17:58:20,691 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 3107 ms
+▶WARN  2019-08-06 17:58:21,323 [restartedMain] --- org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter[afterPropertiesSet:302]: Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+▶WARN  2019-08-06 17:58:21,325 [restartedMain] --- org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[refresh:557]: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+▶INFO  2019-08-06 17:58:21,334 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Stopping service [Tomcat]
+▶INFO  2019-08-06 17:58:21,365 [restartedMain] --- org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[logMessage:135]: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+▶ERROR 2019-08-06 17:58:21,380 [restartedMain] --- org.springframework.boot.SpringApplication[reportFailure:821]: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.yjlee.oauth2.MainApplication.main(MainApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Cannot configure enpdoints
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/yjlee/oauth2/config/AuthorizationServiceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is java.lang.IllegalStateException: For MAC signing you do not need to specify the verifier key separately, and if you do it must match the signing key
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$c85525b3.tokenStore(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.configure(AuthorizationServiceConfig.java:60)
+	at org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration.init(AuthorizationServerEndpointsConfiguration.java:79)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is java.lang.IllegalStateException: For MAC signing you do not need to specify the verifier key separately, and if you do it must match the signing key
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 44 common frames omitted
+Caused by: java.lang.IllegalStateException: For MAC signing you do not need to specify the verifier key separately, and if you do it must match the signing key
+	at org.springframework.util.Assert.state(Assert.java:73)
+	at org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter.afterPropertiesSet(JwtAccessTokenConverter.java:318)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.accessTokenConverter(AuthorizationServiceConfig.java:51)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig.tokenStore(AuthorizationServiceConfig.java:43)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$c85525b3.CGLIB$tokenStore$3(<generated>)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$c85525b3$$FastClassBySpringCGLIB$$f53f0c8b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.yjlee.oauth2.config.AuthorizationServiceConfig$$EnhancerBySpringCGLIB$$c85525b3.tokenStore(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 45 common frames omitted
+▶INFO  2019-08-06 18:03:29,044 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 12204 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 18:03:29,050 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 18:03:29,183 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 18:03:29,184 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 18:03:30,897 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 18:03:30,926 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 18:03:30,927 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 18:03:31,080 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 18:03:31,080 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 1895 ms
+▶INFO  2019-08-06 18:03:32,130 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24d24dd5, org.springframework.security.web.context.SecurityContextPersistenceFilter@27b1e43d, org.springframework.security.web.header.HeaderWriterFilter@e295ad6, org.springframework.security.web.authentication.logout.LogoutFilter@3a144526, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@256811dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f771868, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50ec1107, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51174d4c, org.springframework.security.web.session.SessionManagementFilter@592496e4, org.springframework.security.web.access.ExceptionTranslationFilter@39bab3ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c22d670]
+▶INFO  2019-08-06 18:03:32,269 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@251144e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@69a762ff, org.springframework.security.web.header.HeaderWriterFilter@51a3c295, org.springframework.web.filter.CorsFilter@433eb44a, org.springframework.security.web.authentication.logout.LogoutFilter@c9047ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@261c98fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@696441c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@691d9fc2, org.springframework.security.web.session.SessionManagementFilter@5a87e2cd, org.springframework.security.web.access.ExceptionTranslationFilter@3298ba3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ea1eab2]
+▶INFO  2019-08-06 18:03:32,480 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:03:32,680 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 18:03:32,803 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 18:03:32,811 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 4.47 seconds (JVM running for 6.614)
+▶INFO  2019-08-06 18:03:50,661 [http-nio-4001-exec-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+▶INFO  2019-08-06 18:03:50,662 [http-nio-4001-exec-1] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:524]: Initializing Servlet 'dispatcherServlet'
+▶INFO  2019-08-06 18:03:50,673 [http-nio-4001-exec-1] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:546]: Completed initialization in 10 ms
+▶INFO  2019-08-06 18:04:04,084 [http-nio-4001-exec-4] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 18:04:04,099 [http-nio-4001-exec-4] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 18:08:07,588 [Thread-8] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[shutdown:208]: Shutting down ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:08:08,444 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 12204 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 18:08:08,445 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 18:08:08,934 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 18:08:08,936 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 18:08:08,937 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 18:08:08,963 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 18:08:08,963 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 514 ms
+▶INFO  2019-08-06 18:08:09,329 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@881c0c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@281fdc83, org.springframework.security.web.header.HeaderWriterFilter@1aad8e92, org.springframework.security.web.authentication.logout.LogoutFilter@1ff42a2f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2971477d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52cc652c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2463b8f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a58454e, org.springframework.security.web.session.SessionManagementFilter@627b2af0, org.springframework.security.web.access.ExceptionTranslationFilter@58c44da9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69013e95]
+▶INFO  2019-08-06 18:08:09,366 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3610875d, org.springframework.security.web.context.SecurityContextPersistenceFilter@48d53e28, org.springframework.security.web.header.HeaderWriterFilter@44296dcf, org.springframework.web.filter.CorsFilter@19f5c448, org.springframework.security.web.authentication.logout.LogoutFilter@2590aee9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@314a7e30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e022ac3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b76b952, org.springframework.security.web.session.SessionManagementFilter@6bde0ae0, org.springframework.security.web.access.ExceptionTranslationFilter@7dfd73d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12b9c86]
+▶INFO  2019-08-06 18:08:09,419 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:08:09,460 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 18:08:09,479 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 18:08:09,481 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 1.095 seconds (JVM running for 283.284)
+▶INFO  2019-08-06 18:08:09,486 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener[onApplicationEvent:63]: Condition evaluation unchanged
+▶INFO  2019-08-06 18:10:47,241 [Thread-16] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[shutdown:208]: Shutting down ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:10:48,208 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 12204 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 18:10:48,209 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 18:10:48,680 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 18:10:48,682 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 18:10:48,684 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 18:10:48,717 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 18:10:48,717 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 505 ms
+▶INFO  2019-08-06 18:10:49,202 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71e65ce1, org.springframework.security.web.context.SecurityContextPersistenceFilter@27eb1c99, org.springframework.security.web.header.HeaderWriterFilter@536c9a1d, org.springframework.security.web.authentication.logout.LogoutFilter@7df52edf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e8ad02d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67196c91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5012ae1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@95ea95b, org.springframework.security.web.session.SessionManagementFilter@5b4ed090, org.springframework.security.web.access.ExceptionTranslationFilter@5a435e33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f1c36d4]
+▶INFO  2019-08-06 18:10:49,240 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69f31b12, org.springframework.security.web.context.SecurityContextPersistenceFilter@26adc55, org.springframework.security.web.header.HeaderWriterFilter@531b2085, org.springframework.web.filter.CorsFilter@3acd5a08, org.springframework.security.web.authentication.logout.LogoutFilter@4745bece, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a1c4ba0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6089516e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@353f29cc, org.springframework.security.web.session.SessionManagementFilter@556e50a9, org.springframework.security.web.access.ExceptionTranslationFilter@701311a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b6cc777]
+▶INFO  2019-08-06 18:10:49,304 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:10:49,368 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 18:10:49,387 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 18:10:49,389 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 1.231 seconds (JVM running for 443.192)
+▶INFO  2019-08-06 18:10:49,395 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener[onApplicationEvent:63]: Condition evaluation unchanged
+▶INFO  2019-08-06 18:10:53,827 [RMI TCP Connection(28)-127.0.0.1] --- org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[shutdown:159]: Application shutdown requested.
+▶INFO  2019-08-06 18:10:53,833 [RMI TCP Connection(28)-127.0.0.1] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[shutdown:208]: Shutting down ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:11:02,724 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 10572 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 18:11:02,809 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 18:11:02,882 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+▶INFO  2019-08-06 18:11:02,884 [restartedMain] --- org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[logTo:225]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+▶INFO  2019-08-06 18:11:04,689 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 18:11:04,715 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 18:11:04,716 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 18:11:04,875 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 18:11:04,875 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 1990 ms
+▶INFO  2019-08-06 18:11:05,904 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ee791fe, org.springframework.security.web.context.SecurityContextPersistenceFilter@26d2316a, org.springframework.security.web.header.HeaderWriterFilter@6c33250f, org.springframework.security.web.authentication.logout.LogoutFilter@35cc212b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@332c01d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56924aa0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@664f9041, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@335ac14, org.springframework.security.web.session.SessionManagementFilter@4582567c, org.springframework.security.web.access.ExceptionTranslationFilter@5d864bd7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f6451d1]
+▶INFO  2019-08-06 18:11:05,971 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@165b49f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@11ee601b, org.springframework.security.web.header.HeaderWriterFilter@2a59ef76, org.springframework.web.filter.CorsFilter@6589c6d0, org.springframework.security.web.authentication.logout.LogoutFilter@57876028, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c208861, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3967fecc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f34f879, org.springframework.security.web.session.SessionManagementFilter@69f0efdf, org.springframework.security.web.access.ExceptionTranslationFilter@1d4a192e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32a3991f]
+▶INFO  2019-08-06 18:11:06,109 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:11:06,242 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 18:11:06,315 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 18:11:06,322 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 4.337 seconds (JVM running for 6.453)
+▶INFO  2019-08-06 18:11:12,707 [http-nio-4001-exec-2] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+▶INFO  2019-08-06 18:11:12,709 [http-nio-4001-exec-2] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:524]: Initializing Servlet 'dispatcherServlet'
+▶INFO  2019-08-06 18:11:12,732 [http-nio-4001-exec-2] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:546]: Completed initialization in 22 ms
+▶INFO  2019-08-06 18:11:21,872 [http-nio-4001-exec-3] --- org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint[handleException:92]: Handling error: InvalidTokenException, Cannot convert access token to JSON
+▶WARN  2019-08-06 18:11:21,887 [http-nio-4001-exec-3] --- org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[logException:198]: Resolved [error="invalid_token", error_description="Cannot convert access token to JSON"]
+▶INFO  2019-08-06 18:12:32,126 [Thread-8] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[shutdown:208]: Shutting down ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:12:33,109 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarting:50]: Starting MainApplication on DESKTOP-QCGF5C3 with PID 10572 (D:\workspace\Sample\OAuth2Server\target\classes started by mobigen in D:\workspace\Sample\OAuth2Server)
+▶INFO  2019-08-06 18:12:33,110 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStartupProfileInfo:646]: No active profile set, falling back to default profiles: default
+▶INFO  2019-08-06 18:12:33,579 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[initialize:90]: Tomcat initialized with port(s): 4001 (http)
+▶INFO  2019-08-06 18:12:33,581 [restartedMain] --- org.apache.catalina.core.StandardService[log:173]: Starting service [Tomcat]
+▶INFO  2019-08-06 18:12:33,581 [restartedMain] --- org.apache.catalina.core.StandardEngine[log:173]: Starting Servlet engine: [Apache Tomcat/9.0.21]
+▶INFO  2019-08-06 18:12:33,608 [restartedMain] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring embedded WebApplicationContext
+▶INFO  2019-08-06 18:12:33,608 [restartedMain] --- org.springframework.web.context.ContextLoader[prepareWebApplicationContext:283]: Root WebApplicationContext: initialization completed in 495 ms
+▶INFO  2019-08-06 18:12:33,990 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7badd46, org.springframework.security.web.context.SecurityContextPersistenceFilter@31315639, org.springframework.security.web.header.HeaderWriterFilter@7b4933c0, org.springframework.security.web.authentication.logout.LogoutFilter@36c502b7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@79c413e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@216cf7cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13091711, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bd97849, org.springframework.security.web.session.SessionManagementFilter@445c26a9, org.springframework.security.web.access.ExceptionTranslationFilter@51982aaa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ad951a8]
+▶INFO  2019-08-06 18:12:34,016 [restartedMain] --- org.springframework.security.web.DefaultSecurityFilterChain[<init>:43]: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14c99acb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d3c34e0, org.springframework.security.web.header.HeaderWriterFilter@15ec858, org.springframework.web.filter.CorsFilter@28aa9c7e, org.springframework.security.web.authentication.logout.LogoutFilter@49658e88, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@104a011b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67a11742, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d943759, org.springframework.security.web.session.SessionManagementFilter@29d0e751, org.springframework.security.web.access.ExceptionTranslationFilter@6355ddc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bbd0344]
+▶INFO  2019-08-06 18:12:34,063 [restartedMain] --- org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor[initialize:171]: Initializing ExecutorService 'applicationTaskExecutor'
+▶INFO  2019-08-06 18:12:34,106 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[startServer:57]: LiveReload server is running on port 35729
+▶INFO  2019-08-06 18:12:34,135 [restartedMain] --- org.springframework.boot.web.embedded.tomcat.TomcatWebServer[start:202]: Tomcat started on port(s): 4001 (http) with context path ''
+▶INFO  2019-08-06 18:12:34,136 [restartedMain] --- com.yjlee.oauth2.MainApplication[logStarted:59]: Started MainApplication in 1.078 seconds (JVM running for 94.267)
+▶INFO  2019-08-06 18:12:34,139 [restartedMain] --- org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener[onApplicationEvent:63]: Condition evaluation unchanged
+▶INFO  2019-08-06 18:12:37,030 [http-nio-4001-exec-2] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][log:173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+▶INFO  2019-08-06 18:12:37,031 [http-nio-4001-exec-2] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:524]: Initializing Servlet 'dispatcherServlet'
+▶INFO  2019-08-06 18:12:37,047 [http-nio-4001-exec-2] --- org.springframework.web.servlet.DispatcherServlet[initServletBean:546]: Completed initialization in 15 ms

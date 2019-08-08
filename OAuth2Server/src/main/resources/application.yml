@@ -1,0 +1,31 @@
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:file:./h2/userDB 
+    driver-class-name: org.h2.Driver 
+    username: sa
+    password: sa
+    
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+  
+  
+server:
+  port: 4001
+  error:
+    whitelabel:
+      enabled: false
+      
+logging:
+  config: classpath:logback-spring.xml

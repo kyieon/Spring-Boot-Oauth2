@@ -1,0 +1,36 @@
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+  resources:
+    chain:
+      compressed: true
+      cache: true
+
+  http:
+    encoding:
+      charset: UTF-8
+  
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+  
+server:
+  port: 4002
+  servlet:
+    session:
+      cookie:
+        name: APP_SESSION_ID
+  compression:
+    enabled: false
+  error:
+    whitelabel:
+      enabled: false
+      
+logging:
+  config: classpath:logback-spring.xml
+  
